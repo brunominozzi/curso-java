@@ -26,7 +26,7 @@ public class ClienteController {
 	
 	@GetMapping
 	public Cliente obterClientePorId2(
-			@RequestParam(name = "id", defaultValue = "1") int id) {
+			@RequestParam(defaultValue = "1") int id) {
 		return new Cliente(id, "João Augusto", "111.222.333-44");
 	}
 }
